@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- STANDARD META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <!-- SITE PROPERTIES -->
+    <% if (title === 'Home') { %>
+    <title>Moodsphere | Home</title>
+    <% } else if (title === 'Overview') { %>
+    <title>Moodsphere | Overview</title>
+    <% } else if (title === 'Discover') { %>
+    <title>Moodsphere | Discover</title>
+    <% } else if (title === 'LogIn') { %>
+    <title>Moodsphere | Log In</title>
+    <% } else if (title === 'SignUp') { %>
+    <title>Moodsphere | Sign Up</title>
+    <% } else if (title === 'Entry') { %>
+    <title>Moodsphere | Entry</title>
+    <% } else if (title === 'Doctor') { %>
+    <title>Moodsphere | Doctor</title>
+    <% } else { %>
+    <title>Moodsphere</title>
+    <% } %>
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script defer src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- STYLESHEETS: SEMANTIC UI, ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/ef4fa06c8d.js" crossorigin="anonymous"></script>
+
+    
+    <link
+      rel="stylesheet"
+      type="type/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/themes/material/assets/fonts/icons.woff"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+    <!-- CUSTOM STYLESHEET -->
+    <% if (title === 'Home' || title === 'Overview' || title === 'Entry') { %>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <% } else if (title === 'Discover') { %>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/discover.css" />
+    <% } else if (title === 'LogIn' || title === 'SignUp') { %>
+    <link rel="stylesheet" type="text/css" href="assets/css/log-in.css" />
+    <% } else if (title === 'Doctor') { %>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/doctor.css" />
+    <% } %>
+  </head>
+
+  <body>

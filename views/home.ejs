@@ -1,0 +1,29 @@
+<%- include('partials/header') -%>
+
+<%- include('partials/navbar') -%>
+
+<div class="ui masthead segment">
+    <div class="jumbotron">
+      <!-- MAIN CONTENT -->
+      <div class="header-container">
+        <div class="weather">
+          <img id='weather-icon'>
+          <p id='temp'></p>
+        </div>
+        <h1 class="ui header welcome">Welcome <%= currentUser %>! <br>
+          How are you feeling today?</h1>
+        <h2 id="quote"></h2>
+        <hr class="short" />
+        <h4 id="author"></h4>
+      </div>
+      <a href="/newentry" id="add-entry-btn">
+        Add Entry
+      </a>
+      <div class="arrow">
+        <i class="angle down icon"></i>
+      </div>
+    </div>
+  </div>
+
+
+<!-- <%- include('partials/footer') -%> -->
